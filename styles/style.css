@@ -26,7 +26,7 @@
 .header__links-list-item {
   list-style: circle;
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 5px;
   color: #000;
   font-family: Raleway;
   font-size: 18px;
@@ -79,7 +79,7 @@
 
 .cover {
   display: block;
-  height: 757px;
+  /*height: 757px;*/
   width: 1440px;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
@@ -87,6 +87,7 @@
   position: relative;
   z-index: -1;
   margin-top: 90px;
+  padding-bottom: 50px;
 }
 
 .overlay {
@@ -98,8 +99,7 @@
 }
 
 .cover__title {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   color: #fff;
   font-family: Raleway;
   font-size: 100px;
@@ -109,56 +109,50 @@
   letter-spacing: 30px;
   text-transform: uppercase;
   position: relative;
-  padding: 165px 50px 237px 50px;
+  padding: 165px 50px 137px 50px;
   z-index: 1;
   gap: 20px;
 }
 
 .aligned-text {
-  align-items: flex-start;
+  display: block;
 }
 
 .aligned-text_center {
-  align-self: center;
-  /*width: 1280px;
-  height: 100px;*/
+  display: block;
+  text-align: center;
+  line-height: 100%;
 }
 
 .aligned-text_right {
   display: block;
   text-align: right;
-  /*width: 1340px;
-  height: 100px;*/
+  line-height: 100%;
+  margin-right: -30px;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 30px;
+  letter-spacing: 60px;
 }
 
 .no-letter-spacing {
-  letter-spacing: 0px;
+  letter-spacing: 30px;
 }
 
 .cover__description {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 973px;
-  height: 52px;
-  /*justify-items: end;
-  align-content: end;*/
+  justify-content: end;
   gap: 78px;
   position: relative;
   z-index: 1;
-  margin-bottom: 50px;
+  margin-right: 50px;
 }
 
 .cover__description-text {
-  width: 633px;
-  height: 28px;
-  word-spacing: 17px;
+  align-self: center;
+  word-spacing: 18px;
   color: #fff;
-  /*text-align: center;*/
+  text-align: center;
   font-family: Raleway;
   font-size: 22px;
   font-style: normal;
@@ -287,7 +281,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-decoration: none;
   margin-top: 30px;
   margin-left: 40px;
   display: flex;
