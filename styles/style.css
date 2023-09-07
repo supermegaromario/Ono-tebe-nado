@@ -195,6 +195,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .card_type_film {
@@ -219,6 +220,7 @@
   text-decoration-line: underline;
   text-transform: uppercase;
   position: relative;
+  z-index: 1;
   text-underline-offset: 4px;
   padding: 50px 40px 0px 40px;
 }
@@ -232,6 +234,7 @@
   line-height: 120%;
   position: relative;
   align-self: flex-end;
+  z-index: 1;
   padding: 0px 40px 50px 40px;
 }
 
